@@ -1,15 +1,25 @@
+@font-face {
+    font-family: "Madina";
+    src: url("./fonts/Madina.ttf");
+  }
+
 /* Style the body */
 body {
-    font-family: URW Chancery L;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     color: black;
-    font-size: x-large;
-    text-align: center;
+    /* text-align: left; */
 
     scroll-behavior: smooth;
 }
 
+/* Headings have */
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Madina";
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
     overflow: hidden;
     color: goldenrod;
 }
@@ -37,15 +47,18 @@ h1::after {
     height: 600px;
     object-fit: cover;
 }
-
 .carousel-text-large {
-    font-family: URW Chancery L;
+    font-family: "Madina";
+    font-style: regular;
     font-size: 80px;
     text-shadow: goldenrod 1px 0 10px;
 }
-
 .carousel-text-small {
-    font-family: URW Chancery L;
+    font-family: "Madina";
     font-size: 40px;
     text-shadow: goldenrod 1px 0 10px;
+}
+
+.nav-link {
+    font-weight: 400;
 }

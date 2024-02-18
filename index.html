@@ -46,7 +46,8 @@
     </div>
   </div>
 
-  <nav id="topnavbar" class="navbar navbar-expand-md sticky-top navbar-light bg-white">
+  <nav id="topnavbar" class="navbar navbar-expand-md sticky-top navbar-light mb-5"
+    style="background-color: rgb(163, 198, 163);">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#adresse">Adresse</a>
+            <a class="nav-link mx-3" href="#adresse">Adresse & Anfahrt</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-3" href="#zeitplan">Zeitplan</a>
@@ -64,44 +65,60 @@
             <a class="nav-link mx-3" href="#uebernachtung">Übernachtung</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#rueckmeldung">Rückmeldung / Kontakt</a>
+            <a class="nav-link mx-3" href="#rueckmeldung">Rückmeldung</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#weiteres">Weiteres</a>
+            <a class="nav-link mx-3" href="#fragen">Fragen & Antworten</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-2 mb-5" data-bs-spy="scroll" data-bs-target="#topnavbar" data-bs-root-margin="0px 0px -40%"
+  <div class="container my-5" data-bs-spy="scroll" data-bs-target="#topnavbar" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true" tabindex="0">
 
-    <div id="einleitung" class="container-lg mx-auto">
-      <h1>Liebe Gäste</h1>
+    <div id="einleitung" class="my-5 w-75 mx-auto">
+      <p class="fs-2">Liebe Gäste,</p>
       <p>
-        wir laden euch herzlich zu unserer Hochzeit am 07. Juni 2025 ein.
+        wir laden euch herzlich zu unserer Hochzeit <b>am 07. Juni 2025</b> ein.
         Es würde uns sehr freuen, wenn ihr spätestens <b>zum 01.06.2024</b> zu- oder absagt.
       </p>
       <p>
         Auf dieser Seite solltet ihr alle wichtigen Informationen rund
         um die Feier finden könnt. Sollten dennoch Fragen aufkommen, meldet euch
-        bitte bei
-        <a href="#rueckmeldung">uns&nbsp;oder unseren&nbsp;Trauzeugen</a>.
+        bitte bei uns oder unseren Trauzeugen (den Kontakt findet ihr
+        <a href="#rueckmeldung">hier</a>).
       </p>
-      <p>Vielen Dank!</p>
+      <p class="fs-4">Vielen Dank!</p>
     </div>
 
-    <div id="adresse">
-      <h1 class="text-fancy-gold">Adresse</h1>
-      <p>
-        Wir feiern unsere Hochzeit im
-        <a href="https://hotel-magdeburg.dorint.com/de/">Dorint Herrenkrug Hotel</a>
-        in Magdeburg.
-      </p>
+    <div id="adresse" class="my-5 w-75 mx-auto">
+      <h1>Adresse & Anfahrt</h1>
+      <p class="fs-4">Die wichtigsten Infos im Überblick:</p>
+      <ul>
+        <li>
+          <p>
+            Wir feiern unsere Hochzeit im
+            <a href="https://hotel-magdeburg.dorint.com/de/">Dorint Herrenkrug Hotel</a>
+            in Magdeburg.
+          </p>
+          <p><b>Adresse:</b> <br> Herrenkrug 3 <br> 39114 Magdeburg </p>
+        </li>
+        <li>
+          <b>Für Autofahrer:</b> Das Hotel ist direkt mit Auto erreichbar. Es gibt
+          einige Parkplätze, sodass hier auch keine Probleme entstehen sollten.
+        </li>
+        <li>
+          <b>Für Bahnfahrer:</b> Es fährt eine Straßenbahn direkt vom Magdeburger
+          Hauptbahnhof zum Hotel. Die Magdeburger Verkehrsbetriebe sind für ihre
+          absolute und uneingeschränkte Kompetenz bekannt. <b>Plant daher
+          bitte etwas Pufferzeit ein.</b>
+        </li>
+      </ul>
     </div>
 
-    <div id="zeitplan">
+    <div id="zeitplan" class="my-5 w-75 mx-auto text-center">
       <h1>Zeitplan</h1>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
@@ -113,7 +130,7 @@
       <p>Some content blablabla, some content blablabla.</p>
     </div>
 
-    <div id="uebernachtung">
+    <div id="uebernachtung" class="my-5 w-75 mx-auto text-center">
       <h1>Übernachtung</h1>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
@@ -123,8 +140,8 @@
       <p>Some content blablabla, some content blablabla.</p>
     </div>
 
-    <div id="rueckmeldung">
-      <h1>Rückmeldung / Kontakt</h1>
+    <div id="rueckmeldung" class="my-5 w-75 mx-auto text-center">
+      <h1>Rückmeldung</h1>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
@@ -142,8 +159,8 @@
       <p>Some content blablabla, some content blablabla.</p>
     </div>
 
-    <div id="weiteres">
-      <h1>Weiteres</h1>
+    <div id="fragen" class="my-5 w-75 mx-auto text-center">
+      <h1>Fragen & Antworten</h1>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
       <p>Some content blablabla, some content blablabla.</p>
