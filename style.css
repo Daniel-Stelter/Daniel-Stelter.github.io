@@ -1,0 +1,51 @@
+/* Style the body */
+body {
+    font-family: URW Chancery L;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    color: goldenrod;
+}
+h1::before,
+h1::after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+h1::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-text-large {
+    font-family: URW Chancery L;
+    font-size: 80px;
+    text-shadow: goldenrod 1px 0 10px;
+}
+
+.carousel-text-small {
+    font-family: URW Chancery L;
+    font-size: 40px;
+    text-shadow: goldenrod 1px 0 10px;
+}
