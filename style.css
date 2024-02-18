@@ -18,6 +18,10 @@ body {
     font-family: "Madina";
 }
 
+.scroll-top-fix {
+  scroll-margin-top: 20vh;
+}
+
 /* Headings have */
 h1 {
     font-family: "Madina";
