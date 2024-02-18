@@ -14,6 +14,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.fancy-text {
+    font-family: "Madina";
+}
+
 /* Headings have */
 h1 {
     font-family: "Madina";
@@ -45,6 +49,7 @@ h1::after {
 .carousel-item img {
     width: 100%;
     height: 600px;
+    max-height: 75vh;
     object-fit: cover;
 }
 .carousel-text-large {
