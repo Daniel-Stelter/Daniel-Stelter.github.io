@@ -6,7 +6,8 @@
 }
 
 :root {
-  --green: rgb(163, 198, 163);
+  --dark-green: #38785d;
+  --light-green: #a3c6a3;
   --gold: #dcbb57;
   --handwritten-font: "Madina";
 }
@@ -86,12 +87,27 @@ h1::after {
 }
 
 
-/* --- NAVBAR --- */
+/* --- NAVBAR (variant 1) --- */
 
 .navbar {
-  background-color: var(--green);
+  background-color: var(--light-green);
 }
 
 .nav-link {
   font-weight: 400;
 }
+
+
+/* --- NAVBAR (variant 2) --- */
+
+/* .navbar {
+  background-color: var(--dark-green);
+  border-color: var(--gold);
+  border-style: double none double none;
+  border-width: 3px;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: var(--gold);
+} */
