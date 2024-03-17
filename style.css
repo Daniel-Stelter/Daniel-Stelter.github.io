@@ -1,3 +1,5 @@
+/* --- GENERAL --- */
+
 @font-face {
   font-family: "Madina";
   src: url("./fonts/Madina.ttf");
@@ -9,15 +11,16 @@
   --handwritten-font: "Madina";
 }
 
-/* Style the body */
 body {
   font-family: "DejaVu Sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: black;
-
   scroll-behavior: smooth;
 }
+
+
+/* --- OWN CLASSES --- */
 
 .fancy-text {
   font-family: var(--handwritten-font);
@@ -27,12 +30,8 @@ body {
   scroll-margin-top: 20vh;
 }
 
-/* Navbar */
-.navbar {
-  background-color: var(--green);
-}
 
-/* Headings have */
+/* --- HEADINGS --- */
 h1 {
   font-family: var(--handwritten-font);
   font-weight: 400;
@@ -63,6 +62,9 @@ h1::after {
   margin-right: -50%;
 }
 
+
+/* --- IMAGE CAROUSEL --- */
+
 .carousel-item img {
   width: 100%;
   height: 600px;
@@ -81,6 +83,13 @@ h1::after {
   font-family: var(--handwritten-font);
   font-size: 40px;
   text-shadow: var(--gold) 1px 0 10px;
+}
+
+
+/* --- NAVBAR --- */
+
+.navbar {
+  background-color: var(--green);
 }
 
 .nav-link {
