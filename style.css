@@ -34,7 +34,8 @@ body {
 }
 
 
-/* --- HEADINGS --- */
+/* --- STANDARD ELEMENT STYLING --- */
+
 h1 {
   font-family: var(--handwritten-font);
   font-weight: 400;
@@ -63,6 +64,10 @@ h1::before {
 h1::after {
   left: 0.5em;
   margin-right: -50%;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -307,25 +312,32 @@ h1::after {
 }
 
 
+/* --- FOOTER --- */
+
+footer {
+  background-color: var(--light-green);
+  padding-top: 0.5em;
+  width: 100%;
+}
+
+
 /* --- ICONS --- */
 
 .icon-rings {
   content: url('img/icon-rings.png');
-  height: 40px;
-  width: 40px;
-  display: block;
+  height: 2em;
+  width: 2em;
 }
 
 .icon-champagne {
   content: url('img/icon-champagne.png');
-  height: 40px;
-  width: 40px;
-  display: block;
+  height: 2em;
+  width: 2em;
 }
 
 .icon-camera {
   content: url('img/icon-camera.png');
-  height: 40px;
-  width: 40px;
-  display: block;
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
 }
