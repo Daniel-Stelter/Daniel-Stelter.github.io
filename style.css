@@ -123,7 +123,7 @@ h1::after {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 5rem;
+  padding: 2rem;
   margin: 0 auto 1rem auto;
   overflow: hidden;
 }
@@ -154,23 +154,19 @@ h1::after {
   font-size: 1.5rem;
 }
 
-.timeline-row .timeline-time small {
-  display: block;
-  font-size: 0.8rem;
-}
-
 .timeline-row .timeline-content {
+  font-size: 0.9em;
   position: relative;
   padding: 20px 30px;
   background: var(--light-green);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 .timeline-row .timeline-content:after {
@@ -179,7 +175,7 @@ h1::after {
   top: 20px;
   height: 16px;
   width: 16px;
-  background: var(--dark-green);
+  background: var(--light-green);
 }
 
 .timeline-row .timeline-content:before {
@@ -200,7 +196,6 @@ h1::after {
 .timeline-row .timeline-content .timeline-title {
   font-size: 1.3em;
   font-weight: 500;
-  margin-bottom: 0.3em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -208,20 +203,9 @@ h1::after {
 }
 
 .timeline-row .timeline-content p {
-  margin-bottom: 10px;
+  margin: 0;
   line-height: 150%;
-}
-
-.timeline-row .timeline-content i {
-  font-size: 1.2rem;
-  line-height: 100%;
-  padding: 15px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  background: var(--background);
-  margin-bottom: 10px;
-  display: inline-block;
+  width: 100%;
 }
 
 .timeline-row:nth-child(even) .timeline-content {
@@ -249,7 +233,7 @@ h1::after {
 .timeline-row:nth-child(odd) .timeline-time {
   right: auto;
   left: 50%;
-  text-align: center;
+  text-align: left;
   margin-right: 0;
   margin-left: 20px;
 }
@@ -306,7 +290,7 @@ h1::after {
     top: 0;
     left: 0;
     margin: 0 0 10px 0;
-    text-align: center;
+    text-align: left;
   }
 
   .timeline .timeline-row:nth-child(even) .timeline-content {
@@ -320,4 +304,28 @@ h1::after {
   .timeline .timeline-row:nth-child(even) .timeline-content:after {
     display: none;
   }
+}
+
+
+/* --- ICONS --- */
+
+.icon-rings {
+  content: url('img/icon-rings.png');
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.icon-champagne {
+  content: url('img/icon-champagne.png');
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.icon-camera {
+  content: url('img/icon-camera.png');
+  height: 40px;
+  width: 40px;
+  display: block;
 }
