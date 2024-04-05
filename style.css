@@ -33,6 +33,10 @@ body {
   scroll-margin-top: 20vh;
 }
 
+.sparse-list li {
+  margin-bottom: 1em;
+}
+
 
 /* --- STANDARD ELEMENT STYLING --- */
 
