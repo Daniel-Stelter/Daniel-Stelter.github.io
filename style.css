@@ -341,3 +341,31 @@ footer {
   width: 2em;
   display: inline-flexbox;
 }
+
+.icon-cake {
+  content: url('img/icon-cake.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
+
+.icon-dining {
+  content: url('img/icon-dining.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
+
+.icon-mic {
+  content: url('img/icon-mic.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
+
+.icon-dance {
+  content: url('img/icon-dance.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
