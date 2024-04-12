@@ -360,8 +360,8 @@ footer {
   display: inline-flexbox;
 }
 
-.icon-mic {
-  content: url('img/icon-mic.png');
+.icon-bread {
+  content: url('img/icon-bread.png');
   height: 2em;
   width: 2em;
   display: inline-flexbox;
