@@ -316,6 +316,18 @@ a {
 }
 
 
+/* --- CARDS --- */
+
+.card {
+  border-color: var(--dark-green);
+}
+
+.card-header {
+  background-color: var(--light-green);
+  border-color: var(--dark-green);
+}
+
+
 /* --- FOOTER --- */
 
 footer {
@@ -369,6 +381,13 @@ footer {
 
 .icon-dance {
   content: url('img/icon-dance.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
+
+.icon-clock {
+  content: url('img/icon-clock.png');
   height: 2em;
   width: 2em;
   display: inline-flexbox;
