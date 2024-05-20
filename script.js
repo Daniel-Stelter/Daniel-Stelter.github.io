@@ -64,10 +64,40 @@ function removeGuestEntry(event) {
 
 function submitGuests(event) {
   event.preventDefault();
-  // var nameElements = $("[id^=guestName]")
-  // var names = []
-  // console.log(nameElements)
-  console.log($("form").serializeArray())
+
+  // obtain user entries
+  var names = []
+  var foods = []
+  var birthdays = []
+  $('form [id^=guestName]').each(
+    function () {
+      names.push($(this).val());
+    }
+  )
+  $('form [id^=guestFood]').each(
+    function () {
+      foods.push($(this).val());
+    }
+  )
+  $('form [id^=guestBirthday]').each(
+    function () {
+      var entry = $(this).val()
+      if (entry.length == 0)
+        entry = null
+      birthdays.push(entry);
+    }
+  )
+
+  // obtain address and optional remarks
+  var address = $('form #guestAddress').val()
+  var remarks = $('form #guestRemarks').val()
+
+  // TODO: send them to backend
+  console.log(names);
+  console.log(foods);
+  console.log(birthdays);
+  console.log(address);
+  console.log(remarks);
 }
 
 // Add first guest entry
