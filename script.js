@@ -28,18 +28,26 @@ function addGuestEntry() {
         </div>
       </h5>
       <div class="card-body">
-        <input type="text" class="form-control mb-3" placeholder="Vor- und Nachname" id="guestName${nextGuestId}" required>
-        <select class="form-select mb-3" id="guestFood${nextGuestId}" required>
-          <option value="" selected>Essensauswahl...</option>
-          <option value="1">Mit Fleisch</option>
-          <option value="2">Vegetarisch</option>
-          <option value="3">Vegan</option>
-        </select>
-        <input class="form-check-input me-1" type="checkbox" value="" id="guestIsChild${nextGuestId}"
-          onchange="document.getElementById('guestBirthday${nextGuestId}').disabled = !this.checked;">
-        <label class="form-check-label fs-6" for="guestIsChild${nextGuestId}">Unter 18 Jahre?</label>
-        <input type="text" class="form-control datepicker" placeholder="Geburtstag" id="guestBirthday${nextGuestId}"
-          disabled required>
+        <input type="text" class="form-control mb-3" placeholder="Vor- und Nachname" name="guestName${nextGuestId}" id="guestName${nextGuestId}" required>
+        <label class="form-label">Essensauswahl</label>
+        <div class="form-check">
+          <input type="radio" value="0" class="form-check-input" name="guestFood${nextGuestId}" id="guestFoodMeat${nextGuestId}" required>
+          <label class="form-check-label" for="guestFoodMeat${nextGuestId}">
+            Mit Fleisch
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="radio" value="1" class="form-check-input" name="guestFood${nextGuestId}" id="guestFoodVegetarian${nextGuestId}" required>
+          <label class="form-check-label" for="guestFoodVegetarian${nextGuestId}">
+            Vegetarisch
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="radio" value="2" class="form-check-input" name="guestFood${nextGuestId}" id="guestFoodVegan${nextGuestId}" required>
+          <label class="form-check-label" for="guestFoodVegan${nextGuestId}">
+            Vegan
+          </label>
+        </div>
       </div>
     </div>
     `;
@@ -74,17 +82,9 @@ function submitGuests(event) {
       names.push($(this).val());
     }
   )
-  $('form [id^=guestFood]').each(
+  $('form [id^=guestFood]:checked').each(
     function () {
       foods.push($(this).val());
-    }
-  )
-  $('form [id^=guestBirthday]').each(
-    function () {
-      var entry = $(this).val()
-      if (entry.length == 0)
-        entry = null
-      birthdays.push(entry);
     }
   )
 
@@ -95,7 +95,6 @@ function submitGuests(event) {
   // TODO: send them to backend
   console.log(names);
   console.log(foods);
-  console.log(birthdays);
   console.log(address);
   console.log(remarks);
 }
