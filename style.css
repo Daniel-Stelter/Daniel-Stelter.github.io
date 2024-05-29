@@ -87,13 +87,13 @@ a {
 .carousel-text-large {
   font-family: var(--handwritten-font);
   font-style: regular;
-  font-size: 80px;
+  font-size: 10vmin;
   text-shadow: var(--gold) 1px 0 10px;
 }
 
 .carousel-text-small {
   font-family: var(--handwritten-font);
-  font-size: 40px;
+  font-size: 6vmin;
   text-shadow: var(--gold) 1px 0 10px;
 }
 
