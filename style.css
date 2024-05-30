@@ -16,7 +16,6 @@
 body {
   font-family: "DejaVu Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
   color: black;
   scroll-behavior: smooth;
   background: var(--background);
@@ -25,16 +24,33 @@ body {
 
 /* --- OWN CLASSES --- */
 
-.fancy-text {
+.signature {
   font-family: var(--handwritten-font);
+  font-size: 2.3rem;
 }
 
-.scroll-top-fix {
-  scroll-margin-top: 20vh;
+.sparse-list
+{
+  margin-bottom: 0;
 }
 
 .sparse-list li {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+
+.sparse-list li:last-child
+{
+  margin-bottom: 0;
+}
+
+.chapter {
+  /* background-color: rebeccapurple; */
+  scroll-margin-top: 30vh;
+  margin: 2.5rem auto;
+  /* margin: 0 auto 0 auto; */
+  width: 50rem;
+  max-width: 90vw;
+  border: solid white 1px;
 }
 
 
@@ -43,31 +59,33 @@ body {
 h1 {
   font-family: var(--handwritten-font);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
   overflow: hidden;
   color: var(--gold);
 }
 
-h1::before,
-h1::after {
-  background-color: #000;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
+@media (min-width: 500px) {
+  h1::before,
+  h1::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
 
-h1::before {
-  right: 0.5em;
-  margin-left: -50%;
-}
+  h1::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
 
-h1::after {
-  left: 0.5em;
-  margin-right: -50%;
+  h1::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
 }
 
 a {
@@ -133,7 +151,7 @@ a {
   -moz-border-radius: 4px;
   border-radius: 4px;
   padding: 2rem;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 0 auto;
   overflow: hidden;
 }
 
@@ -152,6 +170,12 @@ a {
   padding-left: 50%;
   position: relative;
   margin-bottom: 30px;
+}
+
+.timeline-row:last-child {
+  padding-left: 50%;
+  position: relative;
+  margin-bottom: 0;
 }
 
 .timeline-row .timeline-time {
@@ -260,7 +284,7 @@ a {
 
 @media (max-width: 1000px) {
   .timeline {
-    padding: 15px;
+    padding: 0;
   }
 
   .timeline:after {
