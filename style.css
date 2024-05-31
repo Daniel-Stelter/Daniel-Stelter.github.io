@@ -337,15 +337,24 @@ a {
 }
 
 
-/* --- CARDS --- */
+/* --- CONTACTS --- */
 
-.card {
-  border-color: var(--dark-green);
+.contact {
+  text-align: center;
 }
 
-.card-header {
-  background-color: var(--light-green);
-  border-color: var(--dark-green);
+.contact img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+.contact-name {
+  font-size: 1.3rem;
+}
+
+.contact-info {
+  font-size: 0.8rem;
 }
 
 
