@@ -31,6 +31,7 @@ body {
 
 .sparse-list
 {
+  padding-left: 1rem;
   margin-bottom: 0;
 }
 
@@ -116,7 +117,7 @@ a {
 }
 
 
-/* --- NAVBAR (variant 1) --- */
+/* --- NAVBAR --- */
 
 .navbar {
   background-color: var(--light-green);
@@ -126,21 +127,6 @@ a {
   font-weight: 400;
   color: var(--dark-green);
 }
-
-
-/* --- NAVBAR (variant 2) --- */
-
-/* .navbar {
-  background-color: var(--dark-green);
-  border-color: var(--gold);
-  border-style: double none double none;
-  border-width: 3px;
-}
-
-.nav-link {
-  font-weight: 400;
-  color: var(--gold);
-} */
 
 
 /* --- TIMELINE --- */
