@@ -59,10 +59,9 @@ body {
 
 .chapter {
   scroll-margin-top: 30vh;
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   width: 50rem;
   max-width: 90vw;
-  border: solid white 1px;
 }
 
 
@@ -279,7 +278,7 @@ a {
   transform: rotate(45deg);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .timeline {
     padding: 0;
   }
@@ -341,12 +340,14 @@ a {
 
 .contact {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .contact img {
   width: 100%;
-  max-width: 200px;
+  max-width: 170px;
   border-radius: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .contact-name {
