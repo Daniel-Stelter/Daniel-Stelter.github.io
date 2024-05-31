@@ -39,16 +39,27 @@ body {
   margin-bottom: 1rem;
 }
 
+.sparse-list li p {
+  margin-bottom: 0.2rem;
+}
+
+.sparse-list li p:last-child {
+  margin-bottom: 0;
+}
+
 .sparse-list li:last-child
 {
   margin-bottom: 0;
 }
 
+.li-header {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
 .chapter {
-  /* background-color: rebeccapurple; */
   scroll-margin-top: 30vh;
   margin: 2.5rem auto;
-  /* margin: 0 auto 0 auto; */
   width: 50rem;
   max-width: 90vw;
   border: solid white 1px;
