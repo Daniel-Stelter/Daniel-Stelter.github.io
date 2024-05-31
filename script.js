@@ -7,3 +7,7 @@
 //         if (menuToggle.classList.contains('show')) { bsCollapse.hide(); }
 //     });
 // });
+
+function removeHash() {
+    setTimeout(function(){history.replaceState("", document.title, window.location.pathname)}, 1)
+}
