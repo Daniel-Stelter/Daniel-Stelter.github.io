@@ -15,7 +15,7 @@
 
 body {
   font-family: "DejaVu Sans", sans-serif;
-  font-weight: 300;
+  font-weight: lighter;
   color: black;
   scroll-behavior: smooth;
   background: var(--background);
@@ -53,7 +53,7 @@ body {
 }
 
 .li-header {
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 0.2rem;
 }
 
@@ -71,7 +71,7 @@ i.marker {
   background-color: lightblue;
   border-radius: 100%;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -80,7 +80,6 @@ i.marker {
 
 h1 {
   font-family: var(--handwritten-font);
-  font-weight: 400;
   font-size: 3rem;
   text-align: center;
   overflow: hidden;
@@ -145,7 +144,7 @@ a {
 }
 
 .nav-link {
-  font-weight: 400;
+  font-weight: normal;
   color: var(--dark-green);
 }
 
@@ -235,7 +234,7 @@ a {
 
 .timeline-row .timeline-content .timeline-title {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: normal;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
