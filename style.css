@@ -40,7 +40,7 @@ body {
 }
 
 .sparse-list li p {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .sparse-list li p:last-child {
@@ -73,6 +73,14 @@ i.marker {
   text-align: center;
   font-weight: normal;
   font-style: normal;
+}
+
+.table th {
+  font-weight: normal;
+}
+
+.table tr {
+  line-height: 0.6rem;
 }
 
 
