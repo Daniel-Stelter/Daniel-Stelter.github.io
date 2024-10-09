@@ -388,6 +388,13 @@ footer {
 
 /* --- ICONS --- */
 
+.icon-meet {
+  content: url('img/icon-meet.png');
+  height: 2em;
+  width: 2em;
+  display: inline-flexbox;
+}
+
 .icon-rings {
   content: url('img/icon-rings.png');
   height: 2em;
